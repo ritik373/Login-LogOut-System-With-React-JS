@@ -31,6 +31,9 @@ const MainNavigation = () => {
            { !cxt &&  <Link to='/'>Login</Link> }
           </li>
           <li>
+          { AuthContext.isLoggedIn &&  <Link to='/home'>Home</Link>}
+          </li>
+          <li>
           { AuthContext.isLoggedIn &&  <Link to='/profile'>Profile</Link>}
           </li>
           <li>
